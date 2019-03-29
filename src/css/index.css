@@ -1,0 +1,161 @@
+/*banner*/
+.index-banner{
+    height: 624px;
+}
+.index-banner-box{
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.index-banner-box .swiper-slide{
+    height: 624px;
+    background-position: center;
+}
+.index-banner-box .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 8px;
+}
+.index-banner-box .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 100%;
+    background: white;
+    border: solid 1px white;
+    opacity: 1;
+}
+.index-banner-box .swiper-pagination-bullet-active{
+    background: black;
+}
+/*热门游戏*/
+.product{
+    height: 1115px;
+    background: #f6f7fb;
+    width: 100%;
+}
+.title{
+    margin: 50px 25px 20px 20px;
+    cursor: pointer;
+}
+.product-content>li{
+    background: white;
+    width: 49%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.product-content-img{
+    height: 310px;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+}
+.product-content-img>img{
+    height: 310px;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    transition: All 0.3s ease-in-out;
+    -webkit-transition: All 0.3s ease-in-out;
+    -moz-transform: All 0.3s ease-in-out;
+    -o-transform: All 0.3s ease-in-out;
+    -ms-transform: All 0.3s ease-in-out;
+}
+.product-content-img>img:hover{
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+}
+
+.product-content-text{
+    color: rgb(81, 81, 81);
+   text-align: center
+}
+.product-content-text>h4{
+    font-size: 30px;
+
+ }
+.product-content-text>p{
+    font-size: 18px;
+    margin-bottom: 5px;
+ }
+ /*发展历程*/
+ .course{
+     background: white;
+     height: 640px;
+     overflow: hidden;
+ }
+ .zhao-swiper-container{
+    height: 570px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 80%;
+    position: relative;
+ }
+ .zhao-swiper-container .swiper-slide{
+    width: 30%;
+    padding: 0 20px;
+ }
+ .swiper-button-next{
+     background-image: url("../images/index/next.png")!important;
+     right: 80px!important;
+ }
+ .swiper-button-prev{
+    background-image: url("../images/index/pre.png")!important;
+    left: 80px!important;
+}
+.divide{
+    background: url(../images/index/divide.png) no-repeat;
+    background-position-y: bottom;
+    font-size: 30px;
+    height: 65px;
+    margin-top: 70px;
+}
+.describe {
+    padding: 0 15px;
+}
+.describe h4{
+    font-size: 26px;
+    font-weight: 400;
+}
+.describe p{
+    font-size: 18px;
+    margin: 12px auto;
+}
+.details {
+    position: absolute;
+    font-size: 20px;
+    right: 22px;
+    color: #666;
+    bottom: 60px;
+    cursor: pointer;
+}
+/*关于燃光*/
+.about{
+    background: #f6f7fb;
+    width: 100%;
+}
+.about-contet-box{
+    position: relative;
+}
+.about-content{
+    height: 290px;
+    margin-bottom: 100px;
+}
+.about-content>div,.about-content>img{
+    float: left;
+}
+.about-content>div{
+    margin-left: 20px;
+}
+.about-content>div p{
+    font-size: 17px;
+    margin: 5px;
+}
+.about-content>div span{
+    font-size: 30px;
+    font-weight: 600;
+}
+.about-content>div em{
+    color: #c82e10;
+}

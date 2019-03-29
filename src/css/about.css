@@ -1,0 +1,128 @@
+
+/*成长历程*/
+.history-top{
+    background: url('../images/about/licheng.png') no-repeat;
+    height: 270px;
+    width: 471px;
+    margin: 50px auto 20px auto;
+    padding-right: 102px;
+}
+.history-start {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #555;
+}
+.history-start em {
+    color: #ff7b27;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+}
+.history-time {
+    padding: 30px 0;
+    position: relative;
+    width: 1136px;
+    margin: 0 auto;
+}
+.plane {
+    background: url('../images/about/feiji.png') no-repeat;
+    width: 180px;
+    height: 174px;
+    position: absolute;
+    right: 180px;
+    top: -80px;
+}
+.clock {
+    background: url('../images/about/clock.png') no-repeat;
+    width: 26px;
+    height: 26px;
+    margin: 0 auto;
+}
+.timetree {
+    background: url('../images/about/historyline.png') center repeat-y;
+    clear: both;
+    overflow: hidden;
+    margin: 0 40px;
+}
+.timetree li.an {
+    animation-play-state: running;
+    -webkit-animation-play-state: running; /* Safari 和 Chrome */
+}
+.timetree li {
+    position: relative;
+    min-height: 41px;
+    width: 318px;
+    font-size: 16px;
+    line-height: 1.8;
+    clear: both;
+    color: #555;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    animation: his .4s forwards;
+    animation-play-state: paused;
+    -webkit-animation-play-state:paused; /* Safari 和 Chrome */
+}
+.timetree li em {
+    box-sizing: content-box;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    line-height: 40px;
+    text-align: center;
+    width: 150px;
+}
+.tree-right {
+    padding-left: 210px;
+    margin-left: 528px;
+}
+.tree-left {
+    padding-right: 210px;
+    margin-left: 210px;
+}
+.tree-left em {
+    right: -5px;
+    height: 41px;
+    padding-right: 47px;
+    background: url('../images/about/time-left.png') no-repeat;
+}
+.tree-right em {
+    left: -5px;
+    height: 41px;
+    padding-left: 47px;
+    background: url('../images/about/time-right.png') no-repeat;
+}
+.about {
+    width: 990px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 2;
+}
+.about p:first-child {
+    font-size: 19px;
+}
+.about .coname {
+    display: inline-block;
+    background: url('../images/about/icon-play.png') no-repeat;
+    padding-left: 30px;
+    margin-left: -32px;
+    font-size: 30px;
+    line-height: 32px;
+}
+.about p {
+    padding: 10px 0;
+    text-indent: 2em;
+}
+.about img {
+    margin: 50px 0;
+}
+@keyframes his{
+    from{ margin-top:30px; opacity: 0;}
+    to{ margin-top: 0; opacity: 1;}
+}
+@-webkit-keyframes his {
+    from{ margin-top:30px; opacity: 0;}
+    to{ margin-top: 0; opacity: 1;}
+}

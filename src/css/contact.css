@@ -1,0 +1,143 @@
+/*商务合作*/
+.bus-slogan {
+    width: 1050px;
+    margin: 40px auto 70px auto;
+    background: url('../images/contact/business.png') left center no-repeat;
+    height: 197px;
+}
+.bus-slogan p {
+    border-left: #ddd 1px solid;
+    height: 97px;
+    padding: 50px 0 50px 30px;
+    margin-left: 410px;
+    color: #f26d22;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.5;
+}
+.business {
+    width: 1020px;
+    margin: 0 auto;
+}
+.business dt {
+    width: 314px;
+    line-height: 64px;
+    background: #ff9829;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.business dd {
+    font-size: 16px;
+    line-height: 2;
+    color: #555;
+    margin-bottom: 70px;
+}
+.business dd em {
+    color: #ff7d27;
+}
+
+.contact-address{
+    position: relative;
+    background: url('../images/contact/adresss.png') no-repeat center;
+    background-size: cover;
+    height: 800px;
+    width: 1260px;
+    margin: 0 auto;
+}
+.contact-address-card{
+    background: url("../images/contact/details_background.jpg") no-repeat center;
+    background-size: cover;
+    width: 900px;
+    height: 500px;
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    padding-left: 365px;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+}
+.contact-address-card img{
+    position: absolute;
+    top: 25px;
+    right: 18px;
+}
+.contact-address-text{
+  margin: 110px 110px 120px 65px;
+}
+.contact-address-text h3{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #4d4d4d;
+}
+.contact-address-text h3::after{
+    display: block;
+    content: '';
+    position: relative;
+    top: 10px;
+    left: 0;
+    width: 127px;
+    height: 1px;
+    background-color: #777777;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+}
+.contact-address-text p{
+    font-size: 18px;
+    color: #4d4d4d;
+    margin-bottom: 8px;
+}
+.contact-us{
+    height:370px;
+    width: 100%;
+    overflow: hidden;
+}
+.contact-us-content{
+    width: 1200px;
+    padding: 50px 180px 60px;
+    margin: 0 auto;
+}
+.contact-us-content-text{
+    margin-top: 26px;
+    font-size: 14px;
+    color: #585659;
+    font-family: "微软雅黑";
+}
+.contact-us-line-box span{
+    position: relative;
+    display: inline-block;
+    top: -6px;
+    height: 1px;
+    color: #838284;
+    background-color: #eeeeee;
+    width: 143px;
+}
+.contact-us-line-box{
+    margin: 0 auto;
+    text-align: center;
+    width: 510px;
+}
+.contact-us-line-text{
+    font-size: 18px;
+    font-family: Candara;
+    color: #838284;
+    padding: 0 10px;
+    text-align: center;
+    display: inline-block;
+}
+.contact-us-content>h2{
+    text-align: center;
+    color: #585659;
+    font-size: 36px;
+    margin: 38px auto 15px auto;
+    font-weight: bold;
+    padding: 0;
+}
