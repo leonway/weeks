@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>成都燃光科技有限公司</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link href="https://cdn.bootcss.com/Swiper/4.4.2/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/layui.css">
+    <link rel="shortcut icon" href="./images/bitbug_favicon.ico" />
+
+    <style>
+    .zhuce{
+      min-height: 700px;
+      margin-top: 20px;
+      border-radius:10px;
+      background: white;
+      margin: 15px auto;
+    }
+    .zhuce>h1{
+      font-size: 18px;
+      margin: 0 33px;
+      padding: 16px 0;
+      height: 62px;
+      line-height: 30px;
+      color: #333;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .main-body-header {
+      padding: 60px 0 0;
+      text-align: center;
+    }
+    .main-body-header>p{
+      margin: 0 auto;
+      padding: 82px 0 0;
+      width: 160px;
+      text-align: center;
+      background: url('./images/logo.png') no-repeat center center;
+      background-size: 160px;
+    }
+    .loginBox{
+      position: relative;
+    margin: 60px auto 50px;
+    width: 380px;
+    overflow: hidden;
+    }
+    .loginBox>p{
+      text-align: center;
+    font-size: 14px;
+    padding: 5px 30px;
+    }
+    .loginBox>p>a{
+      color:#34d6ff
+    }
+    #number,#yanzhen{
+      display: block;
+    margin: 0 auto;
+    border: 1px solid;
+    width: 220px;
+    height: 35px;
+    padding-left: 30px;
+    }
+    .login-box{
+      height: 60px;
+    text-align: right;
+    line-height: 60px;
+    padding-right: 65px;
+    }
+    .login-box a{
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .zhuceBtn{
+      height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 26px;
+    background: #999;
+    border-radius: 6px;
+    width: 80%;
+    margin: 0 auto;
+    cursor: not-allowed;
+    }
+    .zhuceBtn[data-allowed='allowed']{
+      cursor: pointer;
+      background: black;
+      color:white;
+    }
+    .zhuceBtn[data-allowed='allowed']:active{
+      border: 1px solid #999;
+    }
+    .warning{
+      text-align: center;
+    width: 100%;
+    font-size: 12px;
+    display: inline-block;
+    color: red;
+    margin-top: 10px;
+    }
+    .tishi{
+      padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    }
+    .tishi>a{
+      color:#34d6ff
+    }
+    .mainBody{
+        width: 600px;
+        margin: 0 auto;
+        margin-top: 20px
+    }
+    </style>
+</head>
+<body style='background: #f2f2f2'>
+        <header class="head-box">
+            <!-- PC,平板 -->
+            <div class="head-content web-width">
+                    <div class='left'>
+                            <a  href="./index.html"><img src="./images/iocnLogo/LOGO.png" alt="首页"></a>
+                            <h1>成都燃光科技有限公司</h1>
+                        </div>
+                        <div class="menu-group">
+                            <a href="./product.html">燃光科技<span></span></a><span>·</span>
+                            <a href="./course.html">发展历程<span></span></a>
+                            <a href="./about.html">关于燃光<span></span></a><span>·</span>
+                            <a href="./culture.html">燃光文化<span></span></a>
+                        </div>
+                        <div class='touxiang'>
+                            <a href="./zhuce.html"><img src="./images/unlogin.png" alt=""></a>
+                            <ul>
+                                <li>
+                                    <a href="">个人信息</a>
+                                </li>
+                                <li>
+                                    <a href="">登出</a>
+                                </li>
+                            </ul>
+                        </div>
+            </div>
+        </header>
+        <section class="zhuce web-width">
+           <h1>
+             基本信息
+           </h1>
+           <div class='main-body-header'>
+             <p></p>
+           </div>
+           <div class='mainBody'>
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                  <label class="layui-form-label">输入框</label>
+                  <div class="layui-input-block">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+                <div class="layui-form-item">
+                  <label class="layui-form-label">密码框</label>
+                  <div class="layui-input-inline">
+                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                  </div>
+                  <div class="layui-form-mid layui-word-aux">辅助文字</div>
+                </div>
+                <div class="layui-form-item">
+                  <label class="layui-form-label">选择框</label>
+                  <div class="layui-input-block">
+                    <select name="city" lay-verify="required">
+                      <option value=""></option>
+                      <option value="0">北京</option>
+                      <option value="1">上海</option>
+                      <option value="2">广州</option>
+                      <option value="3">深圳</option>
+                      <option value="4">杭州</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="layui-form-item">
+                  <label class="layui-form-label">复选框</label>
+                  <div class="layui-input-block">
+                    <input type="checkbox" name="like[write]" title="写作">
+                    <input type="checkbox" name="like[read]" title="阅读" checked>
+                    <input type="checkbox" name="like[dai]" title="发呆">
+                  </div>
+                </div>
+                <div class="layui-form-item">
+                  <label class="layui-form-label">开关</label>
+                  <div class="layui-input-block">
+                    <input type="checkbox" name="switch" lay-skin="switch">
+                  </div>
+                </div>
+                <div class="layui-form-item">
+                  <label class="layui-form-label">单选框</label>
+                  <div class="layui-input-block">
+                    <input type="radio" name="sex" value="男" title="男">
+                    <input type="radio" name="sex" value="女" title="女" checked>
+                  </div>
+                </div>
+                <div class="layui-form-item layui-form-text">
+                  <label class="layui-form-label">文本域</label>
+                  <div class="layui-input-block">
+                    <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+                  </div>
+                </div>
+                <div class="layui-form-item">
+                  <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                  </div>
+                </div>
+              </form>
+           </div>
+           
+          
+        </section>
+        
+        <footer class="foot-box">
+            <div class="foot-box-content web-width">
+                <h3>联系我们</h3>
+                <ul class="socials">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48px" viewBox="0 0 448 512">
+                            <path d="M433.754 420.445c-11.526 1.393-44.86-52.741-44.86-52.741 0 31.345-16.136 72.247-51.051 101.786 16.842 5.192 54.843 19.167 45.803 34.421-7.316 12.343-125.51 7.881-159.632 4.037-34.122 3.844-152.316 8.306-159.632-4.037-9.045-15.25 28.918-29.214 45.783-34.415-34.92-29.539-51.059-70.445-51.059-101.792 0 0-33.334 54.134-44.859 52.741-5.37-.65-12.424-29.644 9.347-99.704 10.261-33.024 21.995-60.478 40.144-105.779C60.683 98.063 108.982.006 224 0c113.737.006 163.156 96.133 160.264 214.963 18.118 45.223 29.912 72.85 40.144 105.778 21.768 70.06 14.716 99.053 9.346 99.704z"
+                            /> </svg>
+                        <div>
+                            <span>QQ</span>
+                            <span>群: 813499445</span>
+                        </div>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48px" viewBox="0 0 512 512">
+                            <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                            /> </svg>
+                        <div>
+                            <span>Twitter</span>
+                            <span>
+                                <a href="https://mobile.twitter.com/RangonGame" target="_black">@RangonGame</a>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48px" viewBox="0 0 512 512">
+                            <path d="m480.12423,2.7648c7.3515,0 12.02065,2.936 17.95255,8.86236c5.9319,5.87199 8.9232,12.77703 8.9232,20.60635l0,483.29778c0,7.8837 -2.9913,14.73436 -8.9232,20.60635c-5.9826,5.92636 -12.6243,8.86236 -19.9251,8.86236l-129.1329,0l0,-209.217l65.9607,0l9.633,-82.53415l-75.543,0l0,-53.88099c0,-26.91331 12.8271,-40.39715 38.4813,-40.39715l39.8502,0l0,-70.84453c-13.7397,-2.88163 -33.4113,-4.34963 -59.0655,-4.34963c-29.3046,0 -52.8801,9.56918 -70.7772,28.70753c-17.9478,19.19272 -26.871,45.99729 -26.871,80.35933l0,60.40543l-65.9607,0l0,82.53415l65.9607,0l0,209.217l-243.20789,0c-7.3515,0 -13.7397,-2.936 -19.2153,-8.86236c-5.5263,-5.87199 -8.2641,-12.72266 -8.2641,-20.60635l0,-483.29778c0,-7.82933 2.7378,-14.73436 8.2641,-20.60635c5.4756,-5.87199 11.9145,-8.86236 19.2153,-8.86236l450.80379,0z"></path>
+                        </svg>
+                        <div>
+                            <span>Facebook</span>
+                            <span>
+                                <a href="https://www.facebook.com/RangonGame" target="_black">@RangonGame</a>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48px" viewBox="0 0 576 512">
+                            <path d="M385.2 167.6c6.4 0 12.6.3 18.8 1.1C387.4 90.3 303.3 32 207.7 32 100.5 32 13 104.8 13 197.4c0 53.4 29.3 97.5 77.9 131.6l-19.3 58.6 68-34.1c24.4 4.8 43.8 9.7 68.2 9.7 6.2 0 12.1-.3 18.3-.8-4-12.9-6.2-26.6-6.2-40.8-.1-84.9 72.9-154 165.3-154zm-104.5-52.9c14.5 0 24.2 9.7 24.2 24.4 0 14.5-9.7 24.2-24.2 24.2-14.8 0-29.3-9.7-29.3-24.2.1-14.7 14.6-24.4 29.3-24.4zm-136.4 48.6c-14.5 0-29.3-9.7-29.3-24.2 0-14.8 14.8-24.4 29.3-24.4 14.8 0 24.4 9.7 24.4 24.4 0 14.6-9.6 24.2-24.4 24.2zM563 319.4c0-77.9-77.9-141.3-165.4-141.3-92.7 0-165.4 63.4-165.4 141.3S305 460.7 397.6 460.7c19.3 0 38.9-5.1 58.6-9.9l53.4 29.3-14.8-48.6C534 402.1 563 363.2 563 319.4zm-219.1-24.5c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.8 0 24.4 9.7 24.4 19.3 0 10-9.7 19.6-24.4 19.6zm107.1 0c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.5 0 24.4 9.7 24.4 19.3.1 10-9.9 19.6-24.4 19.6z"
+                            /> </svg>
+                        <div>
+                            <span>微信</span>
+                            <span>微信号:RangonGame</span>
+                        </div>
+                    </li>
+                </ul>
+                <p>抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防上当受骗 <a href="./cn.html">隐私政策</a> <a href="./selfTrial.html">自审制度</a> <a href="./jiazhang.html">家长监控</a>
+                    <a href="./agreement.html">服务协议</a>
+                    </p>
+                <span>Copyright 2016 RangonGame 燃光 蜀ICP备18010346号-2</span>
+            </div> 
+        </footer>
+        <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/layer/2.3/layer.js"></script>
+        <script src="https://cdn.bootcss.com/Base64/1.0.2/base64.js"></script>
+        <script src="./js/layui.js"></script>
+        <script src="./js/common.js"></script>
+        <script>
+            //Demo
+            layui.use('form', function(){
+              var form = layui.form;
+              
+              //监听提交
+              form.on('submit(formDemo)', function(data){
+                layer.msg(JSON.stringify(data.field));
+                return false;
+              });
+            });
+            </script>
+       
+</body>
+</html>
